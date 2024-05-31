@@ -20,7 +20,7 @@ export const App = () => {
         style={styles.safeArea}
       >
         <Typography>
-          Hello
+          Welcome
         </Typography>
       </SafeAreaView>
     </>
