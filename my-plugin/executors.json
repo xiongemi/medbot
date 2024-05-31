@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "ts-check": {
+      "implementation": "./src/executors/ts-check/executor",
+      "schema": "./src/executors/ts-check/schema.json",
+      "description": "ts-check executor"
+    }
+  }
+}

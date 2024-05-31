@@ -1,0 +1,10 @@
+{
+  "name": "doctor-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/doctor-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["doctor"],
+  "// targets": "to see all targets run: nx show project doctor-e2e --web",
+  "targets": {}
+}

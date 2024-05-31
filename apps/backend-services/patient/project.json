@@ -1,0 +1,31 @@
+{
+  "name": "patient-service",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/backend-services/patient/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "patient-service:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "patient-service:build:development"
+        },
+        "production": {
+          "buildTarget": "patient-service:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/backend-services/patient/jest.config.ts"
+      }
+    }
+  }
+}

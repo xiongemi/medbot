@@ -1,0 +1,31 @@
+{
+  "name": "doctor-service",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/backend-services/doctor/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "doctor-service:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "doctor-service:build:development"
+        },
+        "production": {
+          "buildTarget": "doctor-service:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/backend-services/doctor/jest.config.ts"
+      }
+    }
+  }
+}

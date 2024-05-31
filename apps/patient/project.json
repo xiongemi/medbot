@@ -1,0 +1,19 @@
+{
+  "name": "patient",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/patient/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "ts-check": {
+      "executor": "@medbot/my-plugin:ts-check"
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/patient/**/*.css"]
+      }
+    }
+  }
+}
