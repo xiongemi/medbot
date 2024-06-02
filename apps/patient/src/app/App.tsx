@@ -1,27 +1,19 @@
-/* eslint-disable jsx-a11y/accessible-emoji */
 import styled from '@emotion/native';
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  StatusBar,
-} from 'react-native';
+import { SafeAreaView, StyleSheet, StatusBar } from 'react-native';
 
 const Typography = styled.Text`
-  color: black;
-`
+  color: #7a1717;
+`;
 
 export const App = () => {
-
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView
-        style={styles.safeArea}
-      >
-        <Typography>
-          Welcome
-        </Typography>
+      <SafeAreaView style={styles.safeArea}>
+        <Typography>Welcome</Typography>
+
+        
       </SafeAreaView>
     </>
   );
@@ -29,7 +21,7 @@ export const App = () => {
 
 const styles = StyleSheet.create({
   safeArea: {
-    flex:1
+    flex: 1,
   },
   scrollView: {
     backgroundColor: '#ffffff',

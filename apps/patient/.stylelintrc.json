@@ -3,9 +3,7 @@
   "ignoreFiles": ["!**/*"],
   "overrides": [
     {
-      "files": ["**/*.tsx"],
-      "plugins": ["stylelint-react-native"],
-      "rules": {"react-native/css-property-no-unknown": true}
+      "files": ["**/*.tsx"]
     }
   ]
 }

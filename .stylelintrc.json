@@ -2,10 +2,18 @@
   "ignoreFiles": ["**/*"],
   "overrides": [
     {
-      "files": ["**/*.css"],
-      "extends": ["stylelint-config-standard"],
+      "files": ["**/*.tsx"],
       "customSyntax": "postcss-styled-syntax",
-      "rules": {}
+      "extends": ["stylelint-config-recommended"],
+      "rules": {
+        "no-descending-specificity": null,
+        "property-no-vendor-prefix": null,
+        "value-no-vendor-prefix": null,
+        "no-invalid-double-slash-comments": null,
+        "comment-empty-line-before": null,
+        "no-duplicate-selectors": null,
+        "property-no-unknown": null
+      }
     }
   ],
   "rules": {}

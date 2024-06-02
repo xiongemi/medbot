@@ -1,1 +1,3 @@
 yarn nx affected -t lint -t ts-check --base=main
+
+yarn nx affected format:check
