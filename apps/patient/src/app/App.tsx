@@ -12,8 +12,6 @@ export const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.safeArea}>
         <Typography>Welcome</Typography>
-
-        
       </SafeAreaView>
     </>
   );
