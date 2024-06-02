@@ -112,3 +112,5 @@ yarn-error.log
 
 apps/patient-e2e/artifacts
 apps/doctor-e2e/artifacts
+
+storybook-static
