@@ -1,7 +1,13 @@
 {
   "extends": ["plugin:@nx/react", "../../.eslintrc.json"],
   "plugins": ["@emotion"],
-  "ignorePatterns": ["!**/*", "public", ".cache", "node_modules"],
+  "ignorePatterns": [
+    "!**/*",
+    "public",
+    ".cache",
+    "node_modules",
+    "storybook-static"
+  ],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
